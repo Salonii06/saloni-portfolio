@@ -4,21 +4,32 @@ import { motion } from "framer-motion"
 
 const experience = [
   {
-    period: "2024 - Present",
+    period: "2023 - Present",
     role: "Senior Frontend Developer",
-    company: "Trivinsai Digital Solutions",
+    company: "Tech Startup Inc.",
     description:
-      "Designing and developing visually engaging, responsive websites with strong UI/UX focus, animations, and modern frontend practices for business clients.",
+      "Leading frontend development, mentoring junior developers, and architecting scalable React applications.",
   },
   {
-    period: "2023 - 2024",
-    role: "Senior Visual Developer",
-    company: "Trivinsai Digital Solutions",
+    period: "2021 - 2023",
+    role: "Frontend Developer",
+    company: "Digital Agency Co.",
     description:
-      "Developed and maintained React-based web applications, optimized performance, and implemented scalable frontend architectures for multiple client projects.",
+      "Built responsive web applications for various clients, implemented UI/UX designs, and optimized performance.",
+  },
+  {
+    period: "2020 - 2021",
+    role: "Junior Frontend Developer",
+    company: "Web Development Studio",
+    description: "Started career learning React.js fundamentals and contributing to production applications.",
+  },
+  {
+    period: "2020",
+    role: "Frontend Development Bootcamp",
+    company: "Online Learning Platform",
+    description: "Completed intensive bootcamp covering HTML, CSS, JavaScript, and React.js fundamentals.",
   },
 ]
-
 
 export function ExperienceSection() {
   const containerVariants = {
@@ -48,7 +59,7 @@ export function ExperienceSection() {
           className="space-y-12"
         >
           <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl font-bold text-white text-center">
-            Experience & Education
+            Experience 
           </motion.h2>
 
           <div className="space-y-8">

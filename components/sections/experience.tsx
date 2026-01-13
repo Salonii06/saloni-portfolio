@@ -48,7 +48,7 @@ export function ExperienceSection() {
           className="space-y-12"
         >
           <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl font-bold text-white text-center">
-            Experience & Education
+            Experience 
           </motion.h2>
 
           <div className="space-y-8">

@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Mail, Phone, MapPin, Instagram, Download } from "lucide-react"
+import { Mail, Phone, MapPin, Instagram, Download, Github, Linkedin } from "lucide-react"
 
 export default function ContactPage() {
   const contactInfo = [
@@ -28,6 +28,18 @@ export default function ContactPage() {
       label: "Instagram",
       value: "salonii_2910",
       href: "https://www.instagram.com/salonii_2910/",
+    },
+    {
+      icon: Github,
+      label: "GitHub",
+      value: "saloni-portfolio",
+      href: "https://github.com/Salonii06",
+    },
+    {
+      icon: Linkedin,
+      label: "LinkedIn",
+      value: "Saloni Sharma",
+      href: "https://www.linkedin.com/in/salonii06/",
     },
   ]
 
@@ -109,17 +121,7 @@ export default function ContactPage() {
             </a>
           </motion.div>
 
-          {/* Message Section */}
-          <motion.div
-            variants={itemVariants}
-            className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 border border-slate-700 rounded-lg p-8 text-center space-y-4"
-          >
-            <h2 className="text-2xl font-bold text-white">Let's Connect</h2>
-            <p className="text-slate-400 leading-relaxed">
-              Whether you have a project idea, a job opportunity, or just want to say hello, feel free to reach out! I'm
-              always open to discussing interesting projects and collaborations.
-            </p>
-          </motion.div>
+     
         </motion.div>
       </div>
     </main>
