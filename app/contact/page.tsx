@@ -1,8 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Mail, Phone, MapPin, Instagram } from "lucide-react"
-import { Footer } from "@/components/sections/footer"
+import { Mail, Phone, MapPin, Instagram, Download } from "lucide-react"
 
 export default function ContactPage() {
   const contactInfo = [
@@ -28,7 +27,7 @@ export default function ContactPage() {
       icon: Instagram,
       label: "Instagram",
       value: "salonii_2910",
-      href: "https://www.instagram.com/salonii_2910?igsh=MWl5OGViZXZmdGwzNw==",
+      href: "https://www.instagram.com/salonii_2910/",
     },
   ]
 
@@ -58,11 +57,13 @@ export default function ContactPage() {
           variants={containerVariants}
           className="space-y-12"
         >
+          {/* Header */}
           <motion.div variants={itemVariants} className="text-center space-y-4">
             <h1 className="text-5xl md:text-6xl font-bold text-white">Get In Touch</h1>
             <p className="text-xl text-slate-400">Feel free to reach out to me through any of the channels below.</p>
           </motion.div>
 
+          {/* Contact Info Grid */}
           <motion.div variants={containerVariants} className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {contactInfo.map((info, index) => {
               const Icon = info.icon
@@ -72,6 +73,8 @@ export default function ContactPage() {
                   variants={itemVariants}
                   href={info.href}
                   className="group bg-slate-800/50 border border-slate-700 rounded-lg p-8 hover:border-blue-600 hover:bg-slate-800/80 transition-all duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-lg bg-blue-600/20 flex items-center justify-center group-hover:bg-blue-600/30 transition-colors">
@@ -87,6 +90,26 @@ export default function ContactPage() {
             })}
           </motion.div>
 
+          {/* Portfolio Download Section */}
+          <motion.div
+            variants={itemVariants}
+            className="bg-slate-800/50 border border-slate-700 rounded-lg p-8 flex flex-col items-center gap-4"
+          >
+            <h2 className="text-2xl font-bold text-white">Download My Portfolio</h2>
+            <p className="text-slate-400 text-center">
+              Click the button below to download my portfolio PDF and learn more about my work.
+            </p>
+            <a
+              href="/Portfolio.pdf" // Place your PDF in the public folder
+              download="Portfolio.pdf"
+              className="flex items-center gap-2 px-6 py-3 bg-blue-600 rounded-lg text-white font-semibold hover:bg-blue-500 transition-colors"
+            >
+              <Download className="w-5 h-5" />
+              Download Portfolio
+            </a>
+          </motion.div>
+
+          {/* Message Section */}
           <motion.div
             variants={itemVariants}
             className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 border border-slate-700 rounded-lg p-8 text-center space-y-4"
@@ -99,8 +122,6 @@ export default function ContactPage() {
           </motion.div>
         </motion.div>
       </div>
-
-      <Footer />
     </main>
   )
 }
