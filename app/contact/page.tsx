@@ -112,7 +112,7 @@ export default function ContactPage() {
               Click the button below to download my portfolio PDF and learn more about my work.
             </p>
             <a
-              href="/Portfolio.pdf" // Place your PDF in the public folder
+              href="/resume.pdf" // Place your PDF in the public folder
               download="Portfolio.pdf"
               className="flex items-center gap-2 px-6 py-3 bg-blue-600 rounded-lg text-white font-semibold hover:bg-blue-500 transition-colors"
             >

@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 const experience = [
   {
     period: "2026 - Present",
-    role: "Senior Frontend Developer",
+    role: "Senior Full Stack Developer",
     company: "Trivinsai Digital Solutions",
     description:
       "Creating visually engaging, responsive websites with strong focus on UI/UX, animations, and modern frontend design practices for business clients.",

@@ -37,7 +37,7 @@ export function AboutSection() {
           {/* About Info - ONLY TEXT */}
           <motion.div variants={itemVariants} className="space-y-4 text-lg text-slate-300 leading-relaxed">
             <p>
-              I'm a dedicated Frontend Developer specializing in React.js. I craft modern, responsive, and
+              I'm a dedicated Full Stack Developer specializing in React.js. I craft modern, responsive, and
               performant web applications that deliver exceptional user experiences.
             </p>
             <p>

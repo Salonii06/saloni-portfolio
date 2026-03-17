@@ -41,7 +41,7 @@ export function HeroSection() {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="mt-6 text-lg md:text-xl text-slate-300 max-w-2xl"
         >
-          Frontend  Developer crafting modern, animated and
+          Full Stack  Developer crafting modern, animated and
           performance-focused web experiences.
         </motion.p>
 

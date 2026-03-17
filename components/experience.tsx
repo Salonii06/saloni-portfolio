@@ -5,21 +5,21 @@ import { motion } from "framer-motion"
 const experience = [
   {
     period: "2023 - Present",
-    role: "Senior Frontend Developer",
+    role: "Senior Full Stack Developer",
     company: "Tech Startup Inc.",
     description:
       "Leading frontend development, mentoring junior developers, and architecting scalable React applications.",
   },
   {
     period: "2021 - 2023",
-    role: "Frontend Developer",
+    role: "Full Stack Developer",
     company: "Digital Agency Co.",
     description:
       "Built responsive web applications for various clients, implemented UI/UX designs, and optimized performance.",
   },
   {
     period: "2020 - 2021",
-    role: "Junior Frontend Developer",
+    role: "Junior Full Stack Developer",
     company: "Web Development Studio",
     description: "Started career learning React.js fundamentals and contributing to production applications.",
   },

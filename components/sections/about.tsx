@@ -37,7 +37,7 @@ export function AboutSection() {
             <div className="w-24 h-24 md:w-32 md:h-32 rounded-lg bg-gradient-to-br from-blue-600 to-blue-800 flex-shrink-0" />
             <div className="space-y-4">
               <p className="text-slate-300 text-lg leading-relaxed">
-                I'm a dedicated Frontend Developer specializing in React.js. I craft modern, responsive, and performant
+                I'm a dedicated Full Stack Developer specializing in React.js. I craft modern, responsive, and performant
                 web applications that deliver exceptional user experiences.
               </p>
               <p className="text-slate-300 text-lg leading-relaxed">
